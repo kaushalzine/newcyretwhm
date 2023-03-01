@@ -512,4 +512,48 @@ export default StyleSheet.create({
     shadowOffset: {width: -2, height: 4},
     shadowOpacity: 0.2
   },
+  headers:{
+    width:110,
+    // backgroundColor:'#1D4355',
+    height:50,
+    flexDirection:'column',
+    borderWidth:0.7,
+    borderColor:'black'
+
+  },
+  textColor:{
+    fontSize: 16,
+    color: 'black',
+    alignSelf: 'center',
+    textAlign: 'center',
+  },
+
+  textinput:{
+    fontSize: 25,
+   
+    // color: 'black',
+    alignSelf: 'center',
+    textAlign: 'center',
+    // backgroundColor:'red'
+  },
+
+  textColorHeader:{
+    fontSize: 18,
+   
+    color: '#ffff',
+    alignSelf: 'center',
+    textAlign: 'center',
+    // backgroundColor:'red'
+  },
+    loginBtn: {
+      width: "20",
+      borderRadius: 25,
+      // height: 20,
+      alignItems: "center",
+      justifyContent: "center",
+      // marginTop: 40,
+      color:'#ffff',
+      backgroundColor: "#1D4355",
+    }
+
 });

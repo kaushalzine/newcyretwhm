@@ -61,7 +61,7 @@ export default class Login extends  React.Component {
     if (user_id != null) {
       const keys = await AsyncStorage.getAllKeys()
         .then(keys => AsyncStorage.multiRemove(keys))
-        .then(() => alert('Storage cleared successfully'));
+        .then(() => Alert.alert('Storage cleared successfully'));
     } else {
       const keys = await AsyncStorage.getAllKeys().then(keys =>
         AsyncStorage.multiRemove(keys),
@@ -161,6 +161,7 @@ export default class Login extends  React.Component {
               placeholderTextColor="grey"
               keyboardType="email-address"
               underlineColorAndroid="transparent"
+              value={this.state.email}
               onChangeText={email => this.setState({email})}
             />
           </View>
@@ -171,6 +172,7 @@ export default class Login extends  React.Component {
               placeholder="Password"
               secureTextEntry={true}
               underlineColorAndroid="transparent"
+              value={this.state.password}
               onChangeText={password => this.setState({password})}
             />
           </View>
